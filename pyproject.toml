@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s1000d-schema-matrix"
+version = "3.0.0"
+description = "Consolidate S1000D XML Schemas into multi-sheet Excel workbooks and CSV requirement matrices"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "kranitbeisser" }
+]
+dependencies = [
+    "lxml>=5.0.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.scripts]
+xsd2table = "xsd2table:main"
